@@ -1,0 +1,101 @@
+body                                                        /*body*/
+{background-image: url("rideau4.jpg");
+background-repeat: no-repeat;
+background-color: rgb(0, 0, 0);
+background-position: center;
+border: 3px black solid 0;}
+
+h1                                                          /*mon nom*/
+{font-size: 3em;
+text-align: center;
+color:rgb(255, 255, 255);
+text-shadow: 0px 10px 10px rgb(0, 0, 0);}
+
+h2                                                          /*titres*/
+{text-decoration: underline;
+font-style: italic;}
+
+h3
+{font-style:oblique;}
+
+.i                                                          /*bloc images*/
+{display: flex;
+justify-content: space-between;}
+
+figure                                                      /*the catvatar*/
+{text-align: center; color:rgb(255, 255, 255);}
+
+ul                                                         /*liste*/
+{list-style-type: none;
+padding-left: 0;}
+
+li                                                          /*éléments de liste*/
+{margin-top: 1em;}
+
+a                                                           /*liens*/
+{color: rgb(46, 159, 179);}
+a:visited
+{color:rgb(192, 33, 33)}
+a:hover
+{font-weight: bold;
+color:rgb(68, 185, 64)}
+
+#c                                                          /*bloc de texte*/
+{display: flex;
+flex-direction: column;
+padding: auto; margin: auto;
+justify-content: space-around;
+align-items: center;}
+
+.o1                                                         /*1er sous bloc de texte*/
+{border: 5px rgb(238, 194, 22) double;                    /*pourquoi Simplon*/
+border-radius: 25px;
+color:rgb(255, 255, 255);
+background-color: rgba(0, 0, 0, 0);
+height: 300px;
+width: 600px;
+margin-top: 0px;
+margin-bottom: 60px;
+text-align:center;
+overflow:auto;}
+
+.o2                                                         /*2e sous bloc de texte*/
+{border: 3px rgb(28, 86, 192) solid;                      /*liens*/
+border-radius: 25px;
+color: rgb(255, 255, 255);
+background-color: rgba(0, 0, 0, 0);
+height: 100px;
+width: 900px;
+margin-top: 0px;
+margin-bottom: 60px;
+padding-bottom: 10px;
+text-align: center;
+overflow: auto;}
+
+.o3                                                         /*3e sous bloc de texte*/
+{border: 3px rgb(22, 238, 173) dotted;                    /*me contacter*/
+border-radius: 25px;
+color: rgb(255, 255, 255);
+background-color: rgba(0, 0, 0, 0);
+height: 100px;
+width: 900px;
+margin-top: 0px;
+margin-bottom: 0px;
+padding-bottom: 10px;
+text-align: center;
+overflow: auto;}
+
+::-webkit-scrollbar                                         /*barres de défilement*/
+{opacity: 0;}
+
+@media screen and (max-width: 900px)                        /*"responsive" ou du moins on essaye*/
+{.o1
+{width: auto;
+min-width: 250px;}
+.o2
+{width: auto;
+min-width: 250px;}
+.o3
+{width: auto;
+min-width: 250px;}
+}
